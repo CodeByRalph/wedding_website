@@ -17,17 +17,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-green-400`}>
+      <body className={`${inter.className} bg-green-200`}>
         {/* navbar goes here since its on all pages */}
-        <nav className="sm:flex ml-3 mr-3 mt-3">
+        <nav className="sm:flex pl-10 pr-10 mt-8 w-screen absolute z-10">
           < HiMenu className="text-white text-4xl float-right mr-5 sm:hidden"/>
-          <h1 className="text-white text-2xl sm:w-1/3">Odette & Ralph</h1>
+          <h1 className="text-white text-4xl sm:w-1/3">Odette & Ralph</h1>
           <ul className="hidden list-none sm:flex flex-row justify-end items-center w-2/3 float-right text-white">
-            <li className="mr-3">Our Story</li>
-            <li className="mr-3">Info</li> 
-            <li className="mr-3">Registry</li>
-            <li className="mr-3">Sponsorship</li>
-            <li className="mr-3">RSVP</li>
+            <li className="pr-8 text-xl">Our Story</li>
+            <li className="pr-8 text-xl">Info</li> 
+            <li className="pr-8 text-xl">Registry</li>
+            <li className="pr-8 text-xl">Sponsorship</li>
+            <li className="text-xl">RSVP</li>
           </ul>
         </nav>
         {children}
