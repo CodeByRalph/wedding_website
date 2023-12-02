@@ -1,19 +1,33 @@
 import Image from 'next/image'
-import Link from 'next/link'
-import HeroImg from 'public/assets/Hero.png'
+import DividerImg from 'public/assets/divider.png'
+
+
+import Story from '../components/Story'
+import Headshots from '../components/Headshots'
+import Counter from '../components/Counter'
+import Hero from '../components/Hero'
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <div className="h-[80vh] w-screen relative flex justify-center items-center">
-        <Image src={HeroImg} alt="Hero Image" layout="fill" objectFit="cover"/>
-        <div className="relative flex flex-col">
-          <h1 className="text-white text-center text-2xl">The wedding celebration of</h1>
-          <h1 className="text-white text-center text-3xl mb-5">Odette and Ralph</h1>
-          <Link href="" className="text-white text-center w-1/3 m-auto p-2 rounded-md bg-green-200">RSVP</Link>
-        </div>
+    <main className="h-auto">
+      {/* Hero Image and button */}
+      <Hero />
+      {/* venue information labels */}
+      <div className="w-full flex flex-col justify-center items-center text-white">
+        <h1 className="mt-10 text-3xl">June 14th, 2025</h1>
+        <h1 className="text-xl mt-5">Location Name</h1>
+        <h1 className="text-xl mt-2">Location Address</h1>
       </div>
-
+      {/* countdown cards */}
+      <Counter />
+      {/* Divider Image */}
+      <div className="h-36 relative flex justify-center sm:h-48 lg:h-96">
+        <Image src={DividerImg} alt="Divider Image" fill={true} style={{ objectFit: "cover"}}/>
+      </div>
+      {/* Headshot images */}
+      <Headshots />
+      <Story />
     </main>
   )
 }
+ 
