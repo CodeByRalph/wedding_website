@@ -26,11 +26,11 @@ export default function RootLayout({
           
           <h1 className="text-white text-xl sm:w-1/3 sm:text-4xl">Odette & Ralph</h1>
           <ul className="hidden list-none sm:flex flex-row justify-end items-center w-2/3 float-right text-white">
-            <li className="pr-8 text-xl">Our Story</li>
-            <li className="pr-8 text-xl">Info</li> 
-            <li className="pr-8 text-xl">Registry</li>
-            <li className="pr-8 text-xl">Sponsorship</li>
-            <li className="text-xl">RSVP</li>
+            <li className="pr-8 text-xl"><Link href="/">Our Story</Link></li>
+            <li className="pr-8 text-xl"><Link href="">Info</Link></li> 
+            <li className="pr-8 text-xl"><Link href="">Registry</Link></li>
+            <li className="pr-8 text-xl"><Link href="">Sponsorship</Link></li>
+            <li className="text-xl"><Link href="/rsvp">RSVP</Link></li>
           </ul>
         </nav>
         {children}

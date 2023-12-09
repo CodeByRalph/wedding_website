@@ -9,7 +9,7 @@ export default function Hero() {
         <div className="relative flex flex-col">
           <h1 className="text-white text-center text-2xl">The wedding celebration of</h1>
           <h1 className="text-white text-center text-3xl mb-5">Odette and Ralph</h1>
-          <Link href="" className="text-white text-center w-1/3 m-auto p-2 rounded-md bg-green-200">RSVP</Link>
+          <Link href="/rsvp" className="text-white text-center w-1/3 m-auto p-2 rounded-md bg-green-200">RSVP</Link>
         </div>
       </div>
   )
